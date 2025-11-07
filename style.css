@@ -31,7 +31,8 @@
 body {
     background: var(--bg-url) no-repeat top center/cover;
     transition: background 0.4s ease-in-out;
-    height: 100vh;
+    min-height: 100vh;
+    background-attachment: fixed;
 } 
 
 body * {
@@ -179,12 +180,12 @@ footer {
 
 /* media queries */
 
-@media (min-width: 700px) {
+@media (max-width: 700px) {
     :root {
-        --bg-url: url(./assets/light-mode-desktop.jpg);
+        --bg-url: url(./assets/light-mode-mobile.png);
     }
 
     .light {
-        --bg-url: url(./assets/dark-mode-desktop.jpg);
+        --bg-url: url(./assets/dark-mode-mobile.png);
     }
 }
