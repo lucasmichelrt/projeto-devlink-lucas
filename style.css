@@ -180,7 +180,7 @@ footer {
 
 footer a::after {
   content: " 🐭";
-  font-size: 0.9em; 
+  font-size: 1em; 
   position: relative;
   top: 1px;
 }
