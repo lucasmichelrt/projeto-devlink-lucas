@@ -6,7 +6,7 @@
 
 :root {
     --text-color: red;
-    --bg-url: url(./assets/PS3_1498.jpg);
+    --bg-url: url(./assets/light-mode-desktop.jpg);
     --stroke-color: rgba(255, 255, 255, 0.5);
     --surface-color: rgba(255, 0, 0, 0.171);
     --surface-color-hover: rgba(255, 255, 255, 0.144);
@@ -16,7 +16,7 @@
 
 .light {
     --text-color: white;
-    --bg-url: url(./assets/19-PS3_4972.jpg);
+    --bg-url: url(./assets/dark-mode-desktop.jpg);
     --stroke-color: rgba(0, 0, 0, 0.5);
     --surface-color:rgb(136 136 136 / 22%);
     --surface-color-hover: rgba(0,0,0,0.02);
@@ -31,6 +31,7 @@
 body {
     background: var(--bg-url) no-repeat top center/cover;
     transition: background 0.4s ease-in-out;
+    height: 100vh;
 } 
 
 body * {
@@ -193,3 +194,14 @@ footer {
     font-size: 14px;
 }
 
+/* media queries */
+
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(./assets/light-mode-desktop.jpg);
+    }
+
+    .light {
+        --bg-url: url(./assets/dark-mode-desktop.jpg);
+    }
+}
