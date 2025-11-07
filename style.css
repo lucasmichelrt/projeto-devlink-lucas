@@ -178,6 +178,14 @@ footer {
     font-size: 14px;
 }
 
+footer a::after {
+  content: " 🐭";
+  font-size: 0.9em; 
+  position: relative;
+  top: 1px;
+}
+
+
 /* media queries */
 
 @media (max-width: 700px) {
