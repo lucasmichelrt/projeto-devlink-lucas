@@ -15,3 +15,13 @@ function toggleMode() {
     }    
 
 }
+
+/* Exibir tooltip "Em produção" ao clicar nas caixas*/ 
+
+document.querySelectorAll('.em-produção').forEach(el => {
+  el.addEventListener('click', e => {
+    e.preventDefault() // impede clique real
+    el.classList.add('show')
+    setTimeout(() => el.classList.remove('show'), 1500) 
+  })
+})

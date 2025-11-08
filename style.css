@@ -197,3 +197,32 @@ footer a::after {
         --bg-url: url(./assets/dark-mode-mobile.png);
     }
 }
+
+/* Em Produção Message */
+
+.em-produção {
+    position: relative;
+    cursor: pointer;
+}
+
+.em-produção::after {
+    content: " Em produção";
+    position: absolute;
+    bottom: 20%;
+    left: 14%;
+    transform: translateX(-50%);
+    background: var(--surface-color);
+    color: var(--text-color);
+    font-size: 12px;
+    padding: 3px 20px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s, transform .2s;
+}
+
+.em-produção:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-4px);
+}
